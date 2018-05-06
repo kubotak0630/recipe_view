@@ -1,0 +1,58 @@
+{
+    "CSA_NXT_CMD_REQ(0)": {
+        "OPE": "C_EXE", 
+        "NAND_DQ": [], 
+        "JUMP": "no"
+    }, 
+    "CSA_CHIP_SET_FEATURE(1)": {
+        "OPE": "C_EXE", 
+        "NAND_DQ": [
+            {
+                "type": "CMD", 
+                "val": "D5", 
+                "notes": ""
+            }, 
+            {
+                "type": "ADR", 
+                "val": "LUN*", 
+                "notes": ""
+            }, 
+            {
+                "type": "ADR", 
+                "val": "XX", 
+                "notes": "NDM[7]"
+            }, 
+            {
+                "type": "WDATA", 
+                "val": "XX", 
+                "notes": "NDM[8]"
+            }, 
+            {
+                "type": "WDATA", 
+                "val": "XX", 
+                "notes": ""
+            }, 
+            {
+                "type": "WDATA", 
+                "val": "XX", 
+                "notes": ""
+            }, 
+            {
+                "type": "WDATA", 
+                "val": "XX", 
+                "notes": ""
+            }
+        ], 
+        "JUMP": "no"
+    }, 
+    "CSA_NDCMD_ENDRSP(2)": {
+        "OPE": "C_EXE", 
+        "NAND_DQ": [], 
+        "JUMP": "no"
+    }, 
+    "MainRecipe(3)": {
+        "OPE": "END", 
+        "NAND_DQ": [], 
+        "JUMP": "no"
+    }
+}
